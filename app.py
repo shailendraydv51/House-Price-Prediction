@@ -17,11 +17,12 @@ scaler = StandardScaler()
 scaled_X = scaler.fit_transform(final_X)
 
 st.sidebar.title('Select House features: ')
-st,sidebar.image('https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=')
+st.sidebar.image('https://media.istockphoto.com/id/856794670/photo/beautiful-luxury-home-exterior-with-green-grass-and-landscaped-yard.jpg?s=612x612&w=0&k=20&c=Jaun3vYekdy6aBcqq5uDQp_neNp5jmdLZXZAqqhcjk8=')
 all_value =[]
 for i in final_X:
   result = st.sidebar.slider(f'select{i} value')
   all_value.append(result)
 
 st.write(all_value)
+
 
